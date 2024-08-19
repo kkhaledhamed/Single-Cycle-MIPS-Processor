@@ -1,1 +1,1 @@
-# Single-Cycle-MIPS-Processor
+# 32 Bit Single-Cycle MIPS Processor
