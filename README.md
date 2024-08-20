@@ -57,13 +57,7 @@ The control unit is the brain of the processor, generating signals that dictate 
 #### Jump: Controls jumping to a new address.
 
 The control signals for various instructions are determined through the following truth table:
-Instruction	Opcode	RegWrite	RegDst	ALUSrc	Branch	MemWrite	MemtoReg	ALUOp	Jump
-R-type	000000	1	1	0	0	0	0	10	0
-lw	100011	1	0	1	0	0	1	00	0
-sw	101011	0	X	1	0	1	X	00	0
-beq	000100	0	X	0	1	0	X	01	0
-addi	001000	1	0	1	0	0	0	00	0
-j	000010	0	X	X	X	0	X	XX	1
+![image](https://github.com/user-attachments/assets/ae530102-c569-4b56-a336-397e745aff23)
 
 ### Data Path
 The data path connects all the major components of the processor. It handles the flow of data between the ALU, registers, memory, and instruction fetch unit.
@@ -72,6 +66,9 @@ The data path connects all the major components of the processor. It handles the
 The processor has two main memory modules: Instruction Memory and Data Memory.
 #### Instruction Memory: Stores the program's instructions. The instruction memory is addressed by the program counter (PC).
 #### Data Memory: Stores data that is read from or written to during load/store instructions. The data memory is addressed by the ALU output.
+
+### Full MIPS Architecture schematic using Vivado XLINIX 2018:
+![image](https://github.com/user-attachments/assets/0c06d066-2e35-4724-845a-69bb586a7106)
 
 ### Testbench and Simulation
 #### Testbench Design
