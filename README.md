@@ -68,7 +68,7 @@ The processor has two main memory modules: Instruction Memory and Data Memory.
 #### Data Memory: Stores data that is read from or written to during load/store instructions. The data memory is addressed by the ALU output.
 
 ### Full MIPS Architecture schematic using Vivado XLINIX 2018:
-![image](https://github.com/user-attachments/assets/0c06d066-2e35-4724-845a-69bb586a7106)
+![Screenshot 2024-08-19 234317](https://github.com/user-attachments/assets/4b0ce9d9-725b-40d0-a171-2f00d5cad78b)
 
 ### Testbench and Simulation
 #### Testbench Design
