@@ -80,5 +80,7 @@ The processor was tested with a variety of programs, including arithmetic operat
 ### Repository Information
 For more details, you can check the full Verilog source code and related files on GitHub:
 
-### GitHub Repository: [Single-Cycle-MIPS-Processor](https://github.com/kkhaledhamed/Single-Cycle-MIPS-Processor)
-### Google Drive : https://drive.google.com/drive/u/0/folders/1pQJ1qeQrRyhw8gzxUlIQhv7xWyuw2pAX
+### GitHub Repository: 
+[Single-Cycle-MIPS-Processor](https://github.com/kkhaledhamed/Single-Cycle-MIPS-Processor)
+### Google Drive: 
+https://drive.google.com/drive/u/0/folders/1pQJ1qeQrRyhw8gzxUlIQhv7xWyuw2pAX
