@@ -13,19 +13,11 @@ Instructions: ADD, SUB, AND, OR, SLT
 #### I-Type Instructions:
 Arithmetic Instructions
 OPCode: 001000
-Instructions: LW, ADDI
-#### S-Type Instructions:
-Store Instructions
-OPCode: 101011
-Instructions: SW
-#### B-Type Instructions:
-Branch Instructions
-OPCode: 000100
-Instructions: BEQ
+Instructions: LW, ADDI , SW
 #### J-Type Instructions:
 Jump Instructions
 OPCode: 000010
-Instructions: J
+Instructions: J , BEQ
 
 ## Design Overview
 ### Processor Components
