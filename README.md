@@ -57,8 +57,8 @@ The data path connects all the major components of the processor. It handles the
 
 ### Memory Modules
 The processor has two main memory modules: Instruction Memory and Data Memory.
-#### Instruction Memory: Stores the program's instructions. The instruction memory is addressed by the program counter (PC).
-#### Data Memory: Stores data that is read from or written to during load/store instructions. The data memory is addressed by the ALU output.
+- Instruction Memory: Stores the program's instructions. The instruction memory is addressed by the program counter (PC).
+- Data Memory: Stores data that is read from or written to during load/store instructions. The data memory is addressed by the ALU output.
 
 ### Full MIPS Architecture schematic using Vivado XLINIX 2018:
 ![Screenshot 2024-08-19 234317](https://github.com/user-attachments/assets/4b0ce9d9-725b-40d0-a171-2f00d5cad78b)
@@ -73,4 +73,3 @@ The processor was tested with a variety of programs, including arithmetic operat
 ### Repository Information
 For more details, you can check the full Verilog source code and related files on GitHub:
 
-### GitHub Repository: [Single-Cycle-MIPS-Processor](https://github.com/kkhaledhamed/Single-Cycle-MIPS-Processor)
