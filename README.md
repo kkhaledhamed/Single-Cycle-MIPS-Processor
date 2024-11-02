@@ -8,45 +8,46 @@ This design supports so many instructions classified into instruction formats. T
 The formats and their respective instructions are as follows:
 
 #### R-Type Instructions:
-OPCode: 000000
-Instructions: ADD, SUB, AND, OR, SLT
+Register type instructions
+- OPCode: 000000
+- Instructions: ADD, SUB, AND, OR, SLT
 #### I-Type Instructions:
 Arithmetic Instructions
-OPCode: 001000
-Instructions: LW, ADDI , SW
+- OPCode: 001000
+- Instructions: LW, ADDI , SW
 #### J-Type Instructions:
 Jump Instructions
-OPCode: 000010
-Instructions: J , BEQ
+- OPCode: 000010
+- Instructions: J , BEQ
 
 ## Design Overview
 ### Processor Components
 The processor is composed of several key components, each playing a vital role in executing instructions:
 
-#### ALU (Arithmetic Logic Unit): Performs arithmetic, logic, and comparison operations.
-#### Register File: Stores and retrieves values from registers, supporting two simultaneous reads and one write operation.
-#### Data Memory: Used to read and write data during load/store operations.
-#### Instruction Memory: Holds the program instructions.
-#### Control Unit: Generates control signals based on the opcode and function code of the instruction.
-#### Data Path: Connects all components and handles data flow through the processor.
+- ALU (Arithmetic Logic Unit): Performs arithmetic, logic, and comparison operations.
+- Register File: Stores and retrieves values from registers, supporting two simultaneous reads and one write operation.
+- Data Memory: Used to read and write data during load/store operations.
+- Instruction Memory: Holds the program instructions.
+- Control Unit: Generates control signals based on the opcode and function code of the instruction.
+- Data Path: Connects all components and handles data flow through the processor.
 
 ### Key Modules
-#### ALU: Handles operations like addition, subtraction, AND, OR, and Set Less Than (SLT).
-#### Control Unit: Determines the operation of the processor by generating control signals based on the opcode and function code of the instruction.
-#### Data Path: Manages the flow of data between components based on the control signals.
-#### Memory Modules (Instruction and Data): Provide storage and access to instructions and data.
+- ALU: Handles operations like addition, subtraction, AND, OR, and Set Less Than (SLT).
+- Control Unit: Determines the operation of the processor by generating control signals based on the opcode and function code of the instruction.
+- Data Path: Manages the flow of data between components based on the control signals.
+- Memory Modules (Instruction and Data): Provide storage and access to instructions and data.
 
 ### Control Unit
 The control unit is the brain of the processor, generating signals that dictate how the data path components operate. The control signals are determined based on the instruction's opcode.
-#### Control Signals
-#### RegWrite: Controls whether a register is written to.
-#### RegDst: Selects the destination register for writing.
-#### ALUSrc: Determines the second ALU operand.
-#### Branch: Enables branching by comparing ALU results.
-#### MemWrite: Enables writing to data memory.
-#### MemtoReg: Selects data from memory to write to a register.
-#### ALUOp: Specifies the operation the ALU should perform.
-#### Jump: Controls jumping to a new address.
+#### Control Signals:
+- RegWrite: Controls whether a register is written to.
+- RegDst: Selects the destination register for writing.
+- ALUSrc: Determines the second ALU operand.
+- Branch: Enables branching by comparing ALU results.
+- MemWrite: Enables writing to data memory.
+- MemtoReg: Selects data from memory to write to a register.
+- ALUOp: Specifies the operation the ALU should perform.
+- Jump: Controls jumping to a new address.
 
 The control signals for various instructions are determined through the following truth table:
 ![image](https://github.com/user-attachments/assets/ae530102-c569-4b56-a336-397e745aff23)
