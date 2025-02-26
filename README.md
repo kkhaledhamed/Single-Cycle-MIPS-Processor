@@ -69,7 +69,3 @@ The testbench initializes the processor and loads a predefined set of instructio
 
 ### Simulation Results
 The processor was tested with a variety of programs, including arithmetic operations, memory access (load/store), and branch/jump instructions. The final states of the registers and memory matched the expected outcomes, verifying the processor’s correct operation.
-
-### Repository Information
-For more details, you can check the full Verilog source code and related files on GitHub:
-
