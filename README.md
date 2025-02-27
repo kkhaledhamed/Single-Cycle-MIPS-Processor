@@ -1,6 +1,6 @@
 # 32-bit Single-Cycle Processor with MIPS Architecture
 ## Introduction
-This project presents the design, implementation, and verification of a 32-bit single-cycle processor following the MIPS architecture. The processor is designed using Verilog HDL, and the architecture adheres to the standard Instruction Set Architecture (ISA) principles as described in the book "Digital Design and Computer Architecture" by David Harris and Sarah Harris. The single-cycle processor executes each instruction, including fetching, decoding, and execution, in a single clock cycle.
+This project presents the design, implementation of a 32-bit single-cycle processor following the MIPS architecture. The processor is designed using Verilog HDL, and the architecture adheres to the standard Instruction Set Architecture (ISA) principles as described in the book "Digital Design and Computer Architecture" by David Harris and Sarah Harris. The single-cycle processor executes each instruction, including fetching, decoding, and execution, in a single clock cycle.
 
 This design supports so many instructions classified into instruction formats. The processor is tested through simulation to ensure it executes instructions correctly.
 
